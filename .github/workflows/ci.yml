@@ -56,14 +56,14 @@ jobs:
   deploy:
     name: Deploy to Railway
     needs: [test, build]
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
 
       - name: Install Railway CLI
-        run: npm install -g @railway/cli@3.3.5
+        run: npm install -g @railway/cli
 
       - name: Deploy to Railway
         env:
@@ -74,4 +74,5 @@ jobs:
           else
             echo "RAILWAY_TOKEN is not set in secrets; skipping live deployment step."
           fi
+
 
