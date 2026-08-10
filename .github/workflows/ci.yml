@@ -58,4 +58,9 @@ jobs:
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
         run: |
-          railway up --detach
+          if [ -n "$RAILWAY_TOKEN" ]; then
+            railway up --detach
+          else
+            echo "RAILWAY_TOKEN is not set in secrets; skipping live deployment step."
+          fi
+
