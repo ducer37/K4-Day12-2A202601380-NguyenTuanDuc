@@ -56,7 +56,7 @@ jobs:
   deploy:
     name: Deploy to Railway
     needs: [test, build]
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -75,4 +75,8 @@ jobs:
             echo "RAILWAY_TOKEN is not set in secrets; skipping live deployment step."
           fi
 
+      - name: Smoke test deployed service
+        run: |
+          sleep 15
+          curl -fsS "https://chat-production-f00b.up.railway.app/healthz"
 

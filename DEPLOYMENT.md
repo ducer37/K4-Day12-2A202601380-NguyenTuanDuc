@@ -38,7 +38,7 @@ Ghi tên biến và **nguồn giá trị**, không ghi giá trị:
 
 ## Lệnh Kiểm Tra
 
-Thay `<URL>` bằng Public URL ở trên:
+Các lệnh dưới đây đã dùng Public URL ở trên:
 
 ```bash
 # 1. Liveness — mong đợi 200 {"status":"ok"}
@@ -83,6 +83,11 @@ Dán output của các lệnh trên vào đây:
 3. HTTP/1.1 401 Unauthorized
 www-authenticate: Bearer
 {"detail":"invalid or missing bearer token"}
+
+4. HTTP/1.1 200 OK
+{"reply":"Theo mình hiểu, Kiem tra report deployment liên quan tới cách hệ thống được đóng gói và vận hành. Điểm mấu chốt là tách cấu hình ra khỏi code và giữ service ở trạng thái stateless.","client_id":"submission-auth-e367d548","turns_before":0,"usd_cost":2.79e-05,"usage":{"prompt":6,"completion":45}}
+
+5. 200 200 200 200 200 200 200 200 200 200 429 429 429 429 429
 ```
 
 ## Ảnh Chụp Màn Hình
