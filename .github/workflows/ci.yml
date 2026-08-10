@@ -40,7 +40,7 @@ jobs:
 
       - name: Run Pytest
         run: |
-          pytest --ignore=tests/test_cp5.py --ignore=tests/test_bonus_cicd.py -v
+          python -m pytest --ignore=tests/test_cp5.py --ignore=tests/test_bonus_cicd.py -v
 
   build:
     name: Build Docker Image
@@ -63,7 +63,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install Railway CLI
-        run: npm install -g @railway/cli
+        run: sudo npm install -g @railway/cli
 
       - name: Deploy to Railway
         env:
