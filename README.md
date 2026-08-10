@@ -1,4 +1,7 @@
+![CI](https://github.com/misp-ce/K4-DAY12-2A202601380-NguyenTuanDuc/actions/workflows/ci.yml/badge.svg)
+
 # K4 — Ngày 12: Hạ Tầng Cloud & Deployment (14h00–18h00)
+
 
 Đưa một chat service từ `localhost:8000` lên một địa chỉ công khai mà người khác
 gọi được, có bảo mật, có giới hạn chi phí, và không sập khi bạn deploy bản mới.
