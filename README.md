@@ -1,4 +1,4 @@
-![CI](https://github.com/misp-ce/K4-DAY12-2A202601380-NguyenTuanDuc/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/ducer37/K4-Day12-2A202601380-NguyenTuanDuc/actions/workflows/ci.yml/badge.svg)
 
 # K4 — Ngày 12: Hạ Tầng Cloud & Deployment (14h00–18h00)
 

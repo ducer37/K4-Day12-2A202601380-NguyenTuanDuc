@@ -12,7 +12,7 @@
 |-----|----------|
 | Họ và tên | Nguyễn Tuấn Đức |
 | Mã học viên | 2A202601380 |
-| Repo | https://github.com/misp-ce/K4-DAY12-2A202601380-NguyenTuanDuc |
+| Repo | https://github.com/ducer37/K4-Day12-2A202601380-NguyenTuanDuc |
 
 ## Service
 
